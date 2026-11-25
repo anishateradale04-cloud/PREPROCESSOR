@@ -4,8 +4,6 @@ PREPROCESSOR
 Overview
 A mini C preprocessor developed using C that performs comment removal, basic header file inclusion and macro substitution, generating a preprocessed ".i" file from the input source code.
 
-![Uploading image.png…]()
-
 
 Features
 - Removes single-line and multi-line comments.
