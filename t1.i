@@ -300,7 +300,7 @@ extern void setlinebuf (FILE *__stream) __THROW;
    marked with __THROW.  */
 extern int fprintf (FILE *__restrict __stream,
 		    const char *__restrict __format, ...);
-/* Write formatted output to  stdout.
+/* Write formatted output to stdout.
 
    This function is a possible cancellation point and therefore not
    marked with __THROW.  */
@@ -315,7 +315,7 @@ extern int sprintf (char *__restrict __s,
    marked with __THROW.  */
 extern int vfprintf (FILE *__restrict __s, const char *__restrict __format,
 		     _G_va_list __arg);
-/* Write formatted output to  stdout from argument list ARG.
+/* Write formatted output to stdout from argument list ARG.
 
    This function is a possible cancellation point and therefore not
    marked with __THROW.  */
@@ -365,7 +365,7 @@ extern int dprintf (int __fd, const char *__restrict __fmt, ...)
    marked with __THROW.  */
 extern int fscanf (FILE *__restrict __stream,
 		   const char *__restrict __format, ...) __wur;
-/* Read formatted input from  stdin.
+/* Read formatted input from stdin.
 
    This function is a possible cancellation point and therefore not
    marked with __THROW.  */
@@ -410,7 +410,7 @@ extern int vfscanf (FILE *__restrict __s, const char *__restrict __format,
 		    _G_va_list __arg)
      __attribute__ ((__format__ (__scanf__, 2, 0))) __wur;
 
-/* Read formatted input from  stdin into argument list ARG.
+/* Read formatted input from stdin into argument list ARG.
 
    This function is a possible cancellation point and therefore not
    marked with __THROW.  */
@@ -466,7 +466,7 @@ extern int __isoc99_vsscanf (const char *__restrict __s,
 extern int fgetc (FILE *__stream);
 extern int getc (FILE *__stream);
 
-/* Read a character from  stdin.
+/* Read a character from stdin.
 
    This function is a possible cancellation point and therefore not
    marked with __THROW.  */
@@ -505,7 +505,7 @@ extern int fgetc_unlocked (FILE *__stream);
 extern int fputc (int __c, FILE *__stream);
 extern int putc (int __c, FILE *__stream);
 
-/* Write a character to  stdout.
+/* Write a character to stdout.
 
    This function is a possible cancellation point and therefore not
    marked with __THROW.  */
@@ -552,7 +552,7 @@ extern char *fgets (char *__restrict __s, int __n, FILE *__restrict __stream)
      __wur;
 
 #if __GLIBC_USE (DEPRECATED_GETS)
-/* Get a newline-terminated string from  stdin, removing the newline.
+/* Get a newline-terminated string from stdin, removing the newline.
 
    This function is impossible to use safely.  It has been officially
    removed from ISO C11 and ISO C++14, and we have also removed it
@@ -612,7 +612,7 @@ extern _IO_ssize_t getline (char **__restrict __lineptr,
    marked with __THROW.  */
 extern int fputs (const char *__restrict __s, FILE *__restrict __stream);
 
-/* Write a string, followed by a newline, to  stdout.
+/* Write a string, followed by a newline, to stdout.
 
    This function is a possible cancellation point and therefore not
    marked with __THROW.  */
@@ -866,7 +866,11 @@ int main()
 	r=mul(a+2,b+1);
 	printf("r=%d\n",r);
 	
-	r1=MUL(a+2,b+1);
+	r1=(a+2)*(b+1);
 	printf("r1=%d\n",r1);
 		return 0;
 }
+
+
+
+
