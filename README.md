@@ -27,6 +27,7 @@ Workflow
 6. Removes intermediate temporary files.
    
 Compilation
+
 make
 
 Execution
