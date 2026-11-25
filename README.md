@@ -3,10 +3,12 @@ PREPROCESSOR
 
 Overview
 A mini C preprocessor developed using C that performs comment removal, basic header file inclusion and macro substitution, generating a preprocessed ".i" file from the input source code.
+
 Features
 - Removes single-line and multi-line comments.
 - Handles basic header file inclusion.
 - Performs basic object-like macro substitution.
+  
 Project Structure
 - "main.c" – Controls the preprocessing workflow.
 - "comment_removal.c/.h" – Removes comments from source code.
@@ -24,10 +26,14 @@ Workflow
    
 Compilation
 make
+
 Execution
+
 ./mypreprocessor filename.c
 Example
+
 ./mypreprocessor test.c
+
 The preprocessed output will be generated as "test.i".
 
 Technologies Used
