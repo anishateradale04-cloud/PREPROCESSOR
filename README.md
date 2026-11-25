@@ -13,6 +13,7 @@ Project Structure
 - "file_inclusion.c/.h" – Handles header file inclusion.
 - "macro_handler.c/.h" – Performs macro substitution.
 - "Makefile" – Automates compilation and linking.
+  
 Workflow
 1. Reads the input C file.
 2. Removes comments and stores the result in "temp1.c".
@@ -20,6 +21,7 @@ Workflow
 4. Performs macro substitution.
 5. Generates the final ".i" output file.
 6. Removes intermediate temporary files.
+   
 Compilation
 make
 Execution
